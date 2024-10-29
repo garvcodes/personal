@@ -11,13 +11,14 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { b } from "maath/dist/index-43782085.esm";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <VerticalTimelineElement
+    <VerticalTimelineElement 
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "#131f6e",
+        color: "f2f2f2",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -46,7 +47,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-blac-100 text-[14px] pl-1 tracking-wider'
           >
             {point}
           </li>
